@@ -1,0 +1,71 @@
+body {
+    background-color: #000;
+  }
+  #landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+  #landing-header h1 {
+    color: #fff;
+  }
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+  }
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://c2.staticflickr.com/6/5280/7005063592_a0f2b5ae56_b.jpg) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/10/17/24/night-839807_960_720.jpg);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(https://cdn.pixabay.com/photo/2019/02/16/13/50/ice-climbing-4000385_960_720.jpg);
+    animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url(https://i.pinimg.com/originals/8a/be/87/8abe87e9e38a7e0ab056b9e79971f36d.jpg);
+    animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/16/10/59/mountains-1828596_960_720.jpg);
+    animation-delay: 40s; 
+  }
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }

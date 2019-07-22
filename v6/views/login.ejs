@@ -1,0 +1,17 @@
+<%  include ./partials/header.ejs%> 
+ <div class ="col-md-12 col-sm-12 ">
+   <div class ="thumbnail">
+     <div class = "container-fluid">
+        <h1>Wellcome to YelpCamp!!</h1>
+        <h3>View our hand-piked campgrounds from al over the world</h3>
+     </div>
+   </div>
+</div>
+<h1>Login!!</h1>
+<form action = '/login' method = 'POST'>
+   <input type = 'text' name ='username' placeholder = 'username'>
+   <input type = 'password' name ='password' placeholder = 'password'>
+   <input type = 'submit' value = 'Login'>
+
+</form>
+<%include ./partials/footer.ejs%>
