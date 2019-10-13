@@ -1,5 +1,2 @@
 # YelpCamp
-Yelpcamp app
-mi first appp
-
-html, css, js, nodejs, express, ejs
+html, css, javascript, nodejs, express, ejs
